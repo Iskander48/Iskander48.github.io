@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,14 @@
     <title>Самый лучший сайт</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/ico">
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         .block{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 1170px;
+            height: 100%;
+            margin: 0 auto;
         }
         .letter{
             color: rgb(255, 251, 11);
@@ -19,14 +23,31 @@
         body{
             background: url(./lowpoly.png);
         }
+        .gif{
+            border-radius: 25%;
+        }
+        .mini_block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        a{
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <div class="block">
-        <p class="letter">Hello!</p>
-    </div>
-    <div class="block">
-        <a href="https://www.youtube.com/watch?v=nybtOIxlku8"><img src="./mem.gif"></a>
+        <div class="mini_block">
+            <p class="letter">Привет!</p>
+        </div>
+        <div class="mini_block">
+            <a href="https://youtu.be/SijylImXgCg?t=21"><p class="letter">Слава России!</p></a>
+        </div>
+        <div class="mini_block">
+            <a href="https://www.youtube.com/watch?v=nybtOIxlku8"><img class="gif" src="./mem.gif"></a>
+        </div>
     </div>
 </body>
 </html>

@@ -27,3 +27,8 @@ body{
 a{
     text-decoration: none;
 }
+
+input:focus
+{
+    color: red;
+}
